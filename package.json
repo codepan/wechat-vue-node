@@ -1,0 +1,30 @@
+{
+  "name": "wechat-vue-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm run serve --prefix client",
+    "socket": "nodemon webSocket.js",
+    "dev": "concurrently \"npm run server\" \"npm run socket\" \"npm run client\""
+  },
+  "author": "zy",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "ws": "^6.1.4"
+  }
+}

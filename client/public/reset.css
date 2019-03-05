@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*********************** reset ***********************/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, figure, figcaption{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*
+  移动端如何定义字体font-family
+@ --------------------------------------中文字体的英文名称
+@ 宋体      SimSun
+@ 黑体      SimHei
+@ 微信雅黑   Microsoft Yahei
+@ 微软正黑体 Microsoft JhengHei
+@ 新宋体    NSimSun
+@ 新细明体  MingLiU
+@ 细明体    MingLiU
+@ 标楷体    DFKai-SB
+@ 仿宋     FangSong
+@ 楷体     KaiTi
+@ 仿宋_GB2312  FangSong_GB2312
+@ 楷体_GB2312  KaiTi_GB2312
+@
+@ 说明：中文字体多数使用宋体、雅黑，英文用Helvetica
+   */
+  font-family: 'Microsoft YaHei', 'SimSun', 'Tahoma', 'Helvetica';
+
+  background: #fff;
+  height: 100%;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, A:focus {
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+button, input, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*********************** driver mobile UI style ***********************/
+[v-cloak] {
+  display: none !important;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
